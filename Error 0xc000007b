@@ -1,0 +1,18 @@
+## Error 0xc000007b when opening Epic Games Launcher
+
+
+Hello, I have recently installed the Epic Games Launcher and every time I open it I get a popup with an Application error -> `The application was unable to start correctly (0xc000007b)`. I have tried everything like reinstalling DirectX, reinstalling .NET core, reinstalling Visual C++ 20xx 64 and 86 bit versions, reinstalling the Epic Games Launcher itself, running in as an administrator, running it in compatibility mode, installing some DLLs in System32 and SysWOW64 Windows files, disabling Antivirus, and it still does not open. How should I proceed?
+
+Here's a solution : 
+
+1. Go to the place where you've installed launcher (usually c:\Program Files (x86)\Epic Games\)
+
+2. Open the `DirectXRedist` folder
+
+3. Inside, there will be several .cab files (those are just simple archives)
+
+4. Open those .cab files and extract JUST the .dll files, and put the wherever you want (could be the Desktop)
+
+5. Now put those .dll files that you extracted inside the folder where your launcher is located (usually c:\Program Files (x86)\Epic Games\Launcher\Portal\Binaries\Win32\)
+
+6. Launch the Epic Games Launcher
